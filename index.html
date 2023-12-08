@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Gradient Background</title>
+    <title>Purple to Light Blue Gradient Background</title>
     <style>
         body {
-            background: linear-gradient(
-                to bottom,
-                #39234a 0%, #291e3b 20%, #1a132b 40%, #00001f 60%, #0033a0 80%, #8be8ff 100%
-            );
-            background-size: 300% 300%;
-            animation: gradient 10s ease-in-out infinite;
+            background: linear-gradient(to bottom left, #673AB7 0%, #81CFE0 50%, #F6F0F5 100%);
+            background-size: 400% 400%;
+            animation: diagonalGradient 10s ease-in-out infinite;
             height: 100vh;
             margin: 0;
         }
 
-        @keyframes gradient {
+        @keyframes diagonalGradient {
             0% {
-                background-position: 0% 50%;
+                background-position: 0% 0%;
             }
             50% {
-                background-position: 100% 50%;
+                background-position: 100% 100%;
             }
             100% {
-                background-position: 0% 50%;
+                background-position: 0% 0%;
             }
         }
     </style>
