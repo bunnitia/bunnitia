@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purple to Light Blue Gradient Background</title>
+    <title>Purple to Light Blue Gradient Background with Button</title>
     <style>
         body {
             background: linear-gradient(to bottom left, #673AB7 0%, #81CFE0 50%, #F6F0F5 100%);
@@ -11,6 +11,9 @@
             animation: diagonalGradient 10s ease-in-out infinite;
             height: 100vh;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         @keyframes diagonalGradient {
@@ -24,8 +27,18 @@
                 background-position: 0% 0%;
             }
         }
+
+        .button {
+            background-color: darkgray;
+            border: 1px solid black;
+            padding: 10px 20px;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
+    <button class="button">Click Me!</button>
 </body>
 </html>
