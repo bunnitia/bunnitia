@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realistic Rainbow Background</title>
+    <title>Animated Rainbow Background</title>
     <style>
         body {
             background-image: linear-gradient(to right, red 0%, orange 20%, yellow 40%, green 60%, blue 80%, indigo 90%, violet 100%);
+            background-size: 200% 100%;
+            animation: rainbow 5s ease-in-out infinite;
             height: 100vh;
             margin: 0;
+        }
+
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
     </style>
 </head>
